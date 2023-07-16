@@ -29,7 +29,4 @@ class RestaurantPizza(db.Model):
     restaurant_id = db.Column(db.Integer, db.ForeignKey('restaurant.id'), nullable=False)
     pizza_id = db.Column(db.Integer, db.ForeignKey('pizza.id'), nullable=False)
 
-    # @validates('price')
-    # def validate_price(self, key, price):
-    #     assert 1 <= price <= 30, "Price must be between 1 and 30"
-    #     return price
+ 
